@@ -18,9 +18,7 @@ public class UserController {
 	
 	@PostMapping("/authenticate")
 	public Boolean authenticate(@RequestBody User user) {
-//		String username = user.getUsername();
 		String password = user.getPassword();
-//		return service.userValidation(username, password);
 		return service.userValidation(password);
 	}
 }
