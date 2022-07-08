@@ -1,5 +1,6 @@
 package com.TestBlog.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -21,6 +22,7 @@ public class Post {
 	@GeneratedValue
 	private int postId;
 	private String title;
+	@Column(columnDefinition = "TEXT")
 	private String content;
 	
 	public int getPostId() {
